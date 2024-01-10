@@ -1,0 +1,229 @@
+$main-color : #EE1C25
+$starts-color : #FFFF00
+
+@mixin kosmos()
+    animation: kosmos infinite 1s linear
+
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+.container
+    width: 100%
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    .flag
+        background-color: $main-color
+        width: calc( 288px  * 4 )
+        height: calc( 192px  * 4 )
+        position: relative
+        .star-container
+            width: calc( ( 288px * 4 ) / 2  )
+            height: calc( ( 192px * 4 ) / 2  )
+            position: absolute
+            display: flex
+            .big-star
+                margin: auto calc( 576px / 5 )
+                font-size: 120px
+                position: relative
+                display: block
+                width: 0px
+                height: 0px
+                border-right: 1em solid transparent
+                border-bottom: 0.7em solid $starts-color
+                border-left: 1em solid transparent
+                transform: rotate(35deg)
+            .big-star:before
+                border-bottom: 0.8em solid $starts-color
+                border-left: 0.3em solid transparent
+                border-right: 0.3em solid transparent
+                position: absolute
+                height: 0
+                width: 0
+                top: -0.45em
+                left: -0.65em
+                display: block
+                content:""
+                transform: rotate(-35deg)
+            .big-star:after
+                position: absolute
+                display: block
+                top: 0.03em
+                left: -1.05em
+                width: 0
+                height: 0
+                border-right: 1em solid transparent
+                border-bottom: 0.7em solid $starts-color
+                border-left: 1em solid transparent
+                border-left: 1em solid transparent
+                transform: rotate(-70deg)
+                content:""
+            .sm-container
+                width: calc( ((( 288px * 4 ) / 2) / 15 ) * 4)
+                height: 90%
+                margin-top: 39px
+                margin-left: calc( ((( 288px * 4 ) / 2) / 15 ) * -2)
+                display: flex
+                align-items: center
+                .left
+                    width: 50%
+                    height: 100%
+                    float: left
+                    .star1
+                        margin-top: 20px
+                        font-size: 38px
+                        position: relative
+                        display: block
+                        width: 0px
+                        height: 0px
+                        border-right: 1em solid transparent
+                        border-bottom: 0.7em solid $starts-color
+                        border-left: 1em solid transparent
+                        transform: rotate(70deg)
+                    .star1:before
+                        border-bottom: 0.8em solid $starts-color
+                        border-left: 0.3em solid transparent
+                        border-right: 0.3em solid transparent
+                        position: absolute
+                        height: 0
+                        width: 0
+                        top: -0.45em
+                        left: -0.65em
+                        display: block
+                        content:""
+                        transform: rotate(-35deg)
+                    .star1:after
+                        position: absolute
+                        display: block
+                        top: 0.03em
+                        left: -1.05em
+                        width: 0
+                        height: 0
+                        border-right: 1em solid transparent
+                        border-bottom: 0.7em solid $starts-color
+                        border-left: 1em solid transparent
+                        border-left: 1em solid transparent
+                        transform: rotate(-70deg)
+                        content:""
+                    .star2
+                        margin-top: calc(345.59px - 91px)
+                        font-size: 38px
+                        position: relative
+                        display: block
+                        width: 0px
+                        height: 0px
+                        border-right: 1em solid transparent
+                        border-bottom: 0.7em solid $starts-color
+                        border-left: 1em solid transparent
+                        transform: rotate(70deg)
+                    .star2:before
+                        border-bottom: 0.8em solid $starts-color
+                        border-left: 0.3em solid transparent
+                        border-right: 0.3em solid transparent
+                        position: absolute
+                        height: 0
+                        width: 0
+                        top: -0.45em
+                        left: -0.65em
+                        display: block
+                        content:""
+                        transform: rotate(-35deg)
+                    .star2:after
+                        position: absolute
+                        display: block
+                        top: 0.03em
+                        left: -1.05em
+                        width: 0
+                        height: 0
+                        border-right: 1em solid transparent
+                        border-bottom: 0.7em solid $starts-color
+                        border-left: 1em solid transparent
+                        border-left: 1em solid transparent
+                        transform: rotate(-70deg)
+                        content:""
+                .right
+                    width: 50%
+                    height: 50%
+                    float: right
+                    .star1
+                        margin-top: 20px
+                        font-size: 38px
+                        position: relative
+                        display: block
+                        width: 0px
+                        height: 0px
+                        border-right: 1em solid transparent
+                        border-bottom: 0.7em solid $starts-color
+                        border-left: 1em solid transparent
+                        transform: rotate(20deg)
+                    .star1:before
+                        border-bottom: 0.8em solid $starts-color
+                        border-left: 0.3em solid transparent
+                        border-right: 0.3em solid transparent
+                        position: absolute
+                        height: 0
+                        width: 0
+                        top: -0.45em
+                        left: -0.65em
+                        display: block
+                        content:""
+                        transform: rotate(-35deg)
+                    .star1:after
+                        position: absolute
+                        display: block
+                        top: 0.03em
+                        left: -1.05em
+                        width: 0
+                        height: 0
+                        border-right: 1em solid transparent
+                        border-bottom: 0.7em solid $starts-color
+                        border-left: 1em solid transparent
+                        border-left: 1em solid transparent
+                        transform: rotate(-70deg)
+                        content:""
+                    .star2
+                        margin-top: calc(172px - 91px)
+                        font-size: 38px
+                        position: relative
+                        display: block
+                        width: 0px
+                        height: 0px
+                        border-right: 1em solid transparent
+                        border-bottom: 0.7em solid $starts-color
+                        border-left: 1em solid transparent
+                        transform: rotate(50deg)
+
+                    .star2:before
+                        border-bottom: 0.8em solid $starts-color
+                        border-left: 0.3em solid transparent
+                        border-right: 0.3em solid transparent
+                        position: absolute
+                        height: 0
+                        width: 0
+                        top: -0.45em
+                        left: -0.65em
+                        display: block
+                        content:""
+                        transform: rotate(-35deg)
+                    .star2:after
+                        position: absolute
+                        display: block
+                        top: 0.03em
+                        left: -1.05em
+                        width: 0
+                        height: 0
+                        border-right: 1em solid transparent
+                        border-bottom: 0.7em solid $starts-color
+                        border-left: 1em solid transparent
+                        border-left: 1em solid transparent
+                        transform: rotate(-70deg)
+                        content:""
+
+@keyframes kosmos
+    0%
+        transform: rotate(0deg)
+    100%
+        transform: rotate(100000000deg)
